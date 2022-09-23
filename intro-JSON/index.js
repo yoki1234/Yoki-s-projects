@@ -57,6 +57,4 @@ function petTemplate(pet){
      <h1 class="app-title"> Pets (${petsData.length} result)</h1>
       ${petsData.map(petTemplate).join('')}
      <p class="footer">These ${petsData.length} pets were added recently. Check back soon for updates.</p>
-
-
   `
