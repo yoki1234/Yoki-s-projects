@@ -12,7 +12,7 @@ const projectData = [
   {
     no: "002",
     name: "Expanding-Card",
-    type: "JS",
+    type: "CSS",
     startDate: "24 Sep 2022",
     endDate: "24 Sep 2022",
     timeTaken: "1hr 20min",
