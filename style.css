@@ -31,7 +31,7 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap:  nowrap;
 }
 .header{
@@ -119,4 +119,22 @@ a{
     font-size: 15px;
     font-weight: 400;
 }
+@media screen and (max-width:1024px){
+    .main{
+    grid-template-columns: repeat(3,1fr);
 
+    }
+}
+@media screen and (max-width:768px){
+    .main{
+    grid-template-columns: repeat(2,1fr);
+
+    }
+   
+}
+@media screen and (max-width:425px){
+    .main{
+    grid-template-columns: repeat(1,1fr);
+
+    }
+}
