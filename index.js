@@ -10,8 +10,17 @@ const projectData = [
     img: "assets/project1.png",
     url: "intro-JSON/index.html",
   },
+  {
+    no:"002",
+    name: "Expanding-Card",
+    type: "JS",
+    startDate: "24 Sep 2022",
+    endDate: "24 Sep 2022",
+    timeTaken: "1hr 20min",
+    img: "assets/project2.png",
+    url: "expandingCard/index.html",
+  },
 
-  
 ];
 
 function typeColor(color) {

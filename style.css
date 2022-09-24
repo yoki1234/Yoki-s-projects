@@ -113,6 +113,7 @@ a{
 .project-card-img{
     width: 239px;
     border-radius: 6px;
+    height: 150px;
 }
 .project-info-container{
     width: 100%;
