@@ -10,8 +10,8 @@ const projectData = [
     img: "assets/project1.png",
     url: "intro-JSON/index.html",
   },
-  
 
+  
 ];
 
 function typeColor(color) {
