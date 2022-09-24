@@ -36,7 +36,7 @@ function Projectcards(cardData) {
                 : cardData.type === "CSS"
                 ? "background-color:SkyBlue;"
                 : "background-color:DarkSeaGreen;"
-            }
+              }
             >${cardData.type}</span>
         </div>
         <img class="project-card-img" src="${cardData.img}" alt="${
