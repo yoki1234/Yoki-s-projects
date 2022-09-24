@@ -68,6 +68,7 @@ a{
     padding: 20px;
     margin: 20px;
     box-shadow: 3px 3px 5px rgb(46, 44, 44);
+    position: relative;
 }
 .project-card:active{
     box-shadow: 1px 2px 5px rgb(46, 44, 44);
@@ -81,14 +82,24 @@ a{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 12px;
+   
 
 }
-.project-card-title-container span:nth-child(1) {
+.project-card-title-container span:nth-child(1){
     font-family:"dangrek.ttf";
-    font-size: 30px;
+    font-size: 15px;
+    position: absolute;
+    bottom:0;
+    color: rgb(61, 47, 28);
+    right:50%;
 
 }
-.project-card-title-container span:nth-child(2){
+.project-card-title-container span:nth-child(2) {
+    font-family:"dangrek.ttf";
+    font-size: 20px;
+
+}
+.project-card-title-container span:nth-child(3){
     font-size: 12px;
     font-weight: 800;
     font-family: sans-serif;

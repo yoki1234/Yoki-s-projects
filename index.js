@@ -1,6 +1,7 @@
 
 const projectData = [
   {
+    no:"001",
     name: "intro-JSON",
     type: "JS",
     startDate: "23 Sep 2022",
@@ -9,42 +10,8 @@ const projectData = [
     img: "assets/project1.png",
     url: "intro-JSON/index.html",
   },
-  {
-    name: "intro-JSON",
-    type: "JS",
-    startDate: "23 Sep 2022",
-    endDate: "23 Sep 2022",
-    timeTaken: "1hr 30min",
-    img: "assets/project1.png",
-    url: "intro-JSON/index.html",
-  },
-  {
-    name: "intro-JSON",
-    type: "JS",
-    startDate: "23 Sep 2022",
-    endDate: "23 Sep 2022",
-    timeTaken: "1hr 30min",
-    img: "assets/project1.png",
-    url: "intro-JSON/index.html",
-  },
-  {
-    name: "intro-JSON",
-    type: "JS",
-    startDate: "23 Sep 2022",
-    endDate: "23 Sep 2022",
-    timeTaken: "1hr 30min",
-    img: "assets/project1.png",
-    url: "intro-JSON/index.html",
-  },
-  {
-    name: "intro-JSON",
-    type: "JS",
-    startDate: "23 Sep 2022",
-    endDate: "23 Sep 2022",
-    timeTaken: "1hr 30min",
-    img: "assets/project1.png",
-    url: "intro-JSON/index.html",
-  },
+  
+
 ];
 
 function typeColor(color) {
@@ -63,6 +30,7 @@ function Projectcards(cardData) {
   <a href="${cardData.url}">
         <div class="project-card">
         <div class="project-card-title-container">
+            <span>${cardData.no}</span>
             <span>${cardData.name}</span>
             <span style = ${typeColor(cardData.type)}>${cardData.type}</span>
         </div>
