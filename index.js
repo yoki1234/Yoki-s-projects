@@ -1,7 +1,6 @@
-
 const projectData = [
   {
-    no:"001",
+    no: "001",
     name: "intro-JSON",
     type: "JS",
     startDate: "23 Sep 2022",
@@ -11,7 +10,7 @@ const projectData = [
     url: "intro-JSON/index.html",
   },
   {
-    no:"002",
+    no: "002",
     name: "Expanding-Card",
     type: "JS",
     startDate: "24 Sep 2022",
@@ -20,20 +19,8 @@ const projectData = [
     img: "assets/project2.png",
     url: "expandingCard/index.html",
   },
-
 ];
 
-function typeColor(color) {
-  if (color === "JS") {
-    return "background-color:rgb(238, 238, 132)";
-  } else if (color === "HTML") {
-    return "background-color: rgb(233, 104, 30)";
-  } else if (color === "CSS") {
-    return "background-color:rgb(109, 171, 230)";
-  } else {
-    return "background-color:rgb(174, 216, 179)";
-  }
-}
 function Projectcards(cardData) {
   return `
   <a href="${cardData.url}">
@@ -41,20 +28,29 @@ function Projectcards(cardData) {
         <div class="project-card-title-container">
             <span>${cardData.no}</span>
             <span>${cardData.name}</span>
-            <span style = ${typeColor(cardData.type)}>${cardData.type}</span>
+            <span style = ${
+              cardData.type === "JS"
+                ? "background-color:Khaki;"
+                : cardData.type === "HTML"
+                ? "background-color:Tomato;"
+                : cardData.type === "CSS"
+                ? "background-color:SkyBlue;"
+                : "background-color:DarkSeaGreen;"
+               }
+            >${cardData.type}</span>
         </div>
         <img class="project-card-img" src="${cardData.img}" alt="${
-        cardData.name
-    }-img">
+    cardData.name
+  }-img">
         <div class="project-info-container">
             <div><strong>Started on:</strong> <span>${
-            cardData.startDate
+              cardData.startDate
             }</span></div>
             <div><strong>Completed on:</strong> <span>${
-            cardData.endDate
+              cardData.endDate
             }</span></div>
             <div><strong>Time taken:</strong> <span>${
-            cardData.timeTaken
+              cardData.timeTaken
             }</span></div>
         </div>
         </div>
