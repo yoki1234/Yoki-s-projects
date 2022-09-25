@@ -12,12 +12,22 @@ const projectData = [
   {
     no: "002",
     name: "Expanding-Card",
-    type: "CSS",
+    type: "JS",
     startDate: "24 Sep 2022",
     endDate: "24 Sep 2022",
     timeTaken: "1hr 20min",
     img: "assets/project2.png",
     url: "expandingCard/index.html",
+  },
+  {
+    no: "003",
+    name: "Progress-Steps",
+    type: "JS",
+    startDate: "25 Sep 2022",
+    endDate: "25 Sep 2022",
+    timeTaken: "45min",
+    img: "assets/project3.png",
+    url: "progress-Steps/index.html",
   },
 ];
 
