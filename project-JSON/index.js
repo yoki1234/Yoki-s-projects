@@ -4,6 +4,36 @@ const projectJSONData = [
     img: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
     info: "hjdladladljasdlajslk",
     url: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+  }, 
+  {
+    name: "jskdfhlsdkj",
+    img: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+    info: "hjdladladljasdlajslk",
+    url: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+  },
+  {
+    name: "jskdfhlsdkj",
+    img: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+    info: "hjdladladljasdlajslk",
+    url: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+  },
+  {
+    name: "jskdfhlsdkj",
+    img: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+    info: "hjdladladljasdlajslk",
+    url: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+  },
+  {
+    name: "jskdfhlsdkj",
+    img: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+    info: "hjdladladljasdlajslk",
+    url: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+  },
+  {
+    name: "jskdfhlsdkj",
+    img: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
+    info: "hjdladladljasdlajslk",
+    url: "https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png",
   },
 ];
 
@@ -25,4 +55,4 @@ const projectJSONTemplate = (document.getElementById("app").innerHTML = `
 </div>
 `);
 
-// ------------
+// -------------------
