@@ -12,10 +12,7 @@ function card(project) {
   return `
     <div class="card-container active">
       <h2>${project.name}</h2>
-      <div class="card-subContainer">
         <img class="project-img" src="${project.img}" alt="${project.name}">
-        <span>${project.info}</span>
-      </div>
       <a href="${project.url}"><button> click here</button></a>
     </div>
   `;
