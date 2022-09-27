@@ -49,6 +49,16 @@ const projectData = [
     img: "assets/project5.png",
     url: "rotating-Navigation/index.html",
   },
+  {
+    no: "006",
+    name: "Hidden-Search",
+    type: "CSS",
+    startDate: "27 Sep 2022",
+    endDate: "27 Sep 2022",
+    timeTaken: "30min",
+    img: "assets/project6.png",
+    url: "hidden-Search/index.html",
+  },
 
 ];
 
