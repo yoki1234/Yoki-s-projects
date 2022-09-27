@@ -39,6 +39,17 @@ const projectData = [
     img: "assets/project4.png",
     url: "project-JSON/index.html",
   },
+  {
+    no: "005",
+    name: "Rotating-Navbar",
+    type: "CSS",
+    startDate: "27 Sep 2022",
+    endDate: "27 Sep 2022",
+    timeTaken: "53min",
+    img: "assets/project5.png",
+    url: "rotating-Navigation/index.html",
+  },
+
 ];
 
 function Projectcards(cardData) {
