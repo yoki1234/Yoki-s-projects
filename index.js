@@ -59,6 +59,16 @@ const projectData = [
     img: "assets/project6.png",
     url: "hidden-Search/index.html",
   },
+  {
+    no: "007",
+    name: "Scroll-Animation",
+    type: "JS",
+    startDate: "27 Sep 2022",
+    endDate: "27 Sep 2022",
+    timeTaken: "47min",
+    img: "assets/project7.png",
+    url: "scroll-Animation/index.html",
+  },
 
 ];
 
