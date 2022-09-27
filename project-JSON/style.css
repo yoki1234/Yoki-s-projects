@@ -47,7 +47,7 @@ body{
     width: 170px;
     gap:20px;
     height: fit-content;
-    justify-content: center;
+  print-color-adjust: ;  justify-content: center;
     padding: 8px;
     border-radius: 10px;
 }
