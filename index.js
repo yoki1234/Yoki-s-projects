@@ -29,6 +29,16 @@ const projectData = [
     img: "assets/project3.png",
     url: "progress-Steps/index.html",
   },
+  {
+    no: "004",
+    name: "Project-JSON",
+    type: "JS",
+    startDate: "26 Sep 2022",
+    endDate: "27 Sep 2022",
+    timeTaken: "2hr 55min",
+    img: "assets/project4.png",
+    url: "project-JSON/index.html",
+  },
 ];
 
 function Projectcards(cardData) {
