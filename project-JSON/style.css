@@ -37,7 +37,6 @@ body{
    justify-items:center ;
    row-gap: 10px;
    width: 100%;
-   
 }
 .card-container{
     display: flex;

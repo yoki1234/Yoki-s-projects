@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+input{
+    width: 400px;
+    height: 40px;
+    font-family: sans-serif;
+    color: rgb(49, 48, 47);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(211, 181, 141);
+}
+input::placeholder{
+    color: antiquewhite;
+    font-size: 20px;
+}
+.btn-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(82, 63, 11);
+    background-color: #d8a04d;
+    font-weight: 700;
+    color:rgb(71, 52, 22);
+    box-shadow: 2px 2px 5px black;
+}
+button:active{
+    box-shadow: 1px 1px 2px black;
+}
+.passive{
+    text-align: center;
+    width: 450px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #644b24;
+}
+.passive span{
+    font-weight: 700;
+}
+
+@media screen and (max-width:425px) {
+    .passive{
+        width: 290px;
+    }
+    input{
+        width: 276px;
+    }
+}
