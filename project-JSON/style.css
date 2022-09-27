@@ -114,4 +114,7 @@ button:active{
     .project-img{
         width: 127px;
     }
+    h2{
+        font-size: 14px;
+    }
 }
