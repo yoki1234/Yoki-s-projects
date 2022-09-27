@@ -1,4 +1,5 @@
-const people = JSON.parse(localStorage.getItem("tester"));
+const people = JSON.parse(localStorage.getItem("tester"))||{first:"yoki",last:"satiova",age:"22",favColor:"red"};
+console.log(people);
 
 const parseAndStringTemplate = (document.getElementById("app").innerHTML = `
 <div class="conatiner">
@@ -34,10 +35,7 @@ function addToStorage() {
   localStorage.setItem("tester", myObj);
 }
 
-// const people = JSON.parse(localStorage.getItem("tester")) || {
-//   first: "none",
-//   last: "none",
-// };
+
 function viewStorage() {
   let tempHolder = localStorage.getItem("tester");
   JSON.parse(tempHolder);
