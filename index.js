@@ -76,6 +76,17 @@ const projectData = [
     img: "assets/project7.png",
     url: "scroll-Animation/index.html",
   },
+  {
+    no: "008",
+    name: "Etsy",
+    contained:"web-clone",
+    type: "JS",
+    startDate: "28 Sep 2022",
+    endDate: "28 Sep 2022",
+    timeTaken: "2hr 45min",
+    img: "assets/project8.png",
+    url: "web-clone:etsy/index.html",
+  },
 ];
 
 function Projectcards(cardData) {
