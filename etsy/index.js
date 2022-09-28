@@ -34,8 +34,10 @@ const etsyData = {
       },
     ],
   },
-};
+  main:{
 
+  }
+};
 
 function navbar(navData){
   navData=etsyData.nav;
