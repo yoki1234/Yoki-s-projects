@@ -85,7 +85,7 @@ const projectData = [
     endDate: "28 Sep 2022",
     timeTaken: "2hr 45min",
     img: "assets/project8.png",
-    url: "web-clone:etsy/index.html",
+    url: "etsy/index.html",
   },
 ];
 
