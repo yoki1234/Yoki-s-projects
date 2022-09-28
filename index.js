@@ -2,6 +2,7 @@ const projectData = [
   {
     no: "001",
     name: "intro-JSON",
+    contained:"learning",
     type: "JS",
     startDate: "23 Sep 2022",
     endDate: "23 Sep 2022",
@@ -12,6 +13,7 @@ const projectData = [
   {
     no: "002",
     name: "Expanding-Card",
+    contained:"project",
     type: "JS",
     startDate: "24 Sep 2022",
     endDate: "24 Sep 2022",
@@ -22,6 +24,7 @@ const projectData = [
   {
     no: "003",
     name: "Progress-Steps",
+    contained:"project",
     type: "JS",
     startDate: "25 Sep 2022",
     endDate: "25 Sep 2022",
@@ -32,6 +35,7 @@ const projectData = [
   {
     no: "004",
     name: "Project-JSON",
+    contained:"learning",
     type: "JS",
     startDate: "26 Sep 2022",
     endDate: "27 Sep 2022",
@@ -42,6 +46,7 @@ const projectData = [
   {
     no: "005",
     name: "Rotating-Navbar",
+    contained:"project",
     type: "CSS",
     startDate: "27 Sep 2022",
     endDate: "27 Sep 2022",
@@ -52,6 +57,7 @@ const projectData = [
   {
     no: "006",
     name: "Hidden-Search",
+    contained:"project",
     type: "CSS",
     startDate: "27 Sep 2022",
     endDate: "27 Sep 2022",
@@ -62,6 +68,7 @@ const projectData = [
   {
     no: "007",
     name: "Scroll-Animation",
+    contained:"project",
     type: "JS",
     startDate: "27 Sep 2022",
     endDate: "27 Sep 2022",
@@ -69,13 +76,21 @@ const projectData = [
     img: "assets/project7.png",
     url: "scroll-Animation/index.html",
   },
-
 ];
 
 function Projectcards(cardData) {
   return `
   <a href="${cardData.url}">
-        <div class="project-card">
+        <div class="project-card"
+        style = ${
+          cardData.contained === "web-clone"
+            ? "background-color:LightSalmon;"
+            : cardData.contained === "learning"
+            ? "background-color:BurlyWood;"
+            : cardData.contained === "project"
+            ? "background-color:CornflowerBlue;"
+            : "background-color:SeaShell;"}
+            >
         <div class="project-card-title-container">
             <span>${cardData.no}</span>
             <span>${cardData.name}</span>
@@ -87,7 +102,7 @@ function Projectcards(cardData) {
                 : cardData.type === "CSS"
                 ? "background-color:SkyBlue;"
                 : "background-color:DarkSeaGreen;"
-              }
+            }
             >${cardData.type}</span>
         </div>
         <img class="project-card-img" src="${cardData.img}" alt="${
