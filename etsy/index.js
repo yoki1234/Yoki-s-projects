@@ -36,31 +36,44 @@ const etsyData = {
   },
 };
 
+
+function navbar(navData){
+  navData=etsyData.nav;
+  return`
+    <nav>
+      <a href="#" class="logo"><img src=${navData.logo}></a>
+      <div class="search-box">
+          <input type="search" placeholder="Search">
+          <img class="nav-icon" src=${navData.searchIcon}>
+      </div>
+      <img class="nav-icon" src=${navData.signInIcon}>
+      <img class="nav-icon" src=${navData.addToCartIcon}>
+    </nav>
+  `
+}
 function headerCollectionTemplate(content){
-    return`
-     <a herf="#" class="header-card">
-        <img src=${content.url}>
-        <p>${content.name}</p>
-     </a>
-    `
+  return`
+    <a herf="#" class="header-card">
+      <img src=${content.url}>
+      <p>${content.name}</p>
+    </a>
+  `
+}
+function header(headerData){
+  headerData=etsyData.header;
+  return`
+  <header>
+    <h2>${headerData.title}</h2>
+    <div class="header-collection">
+        ${headerData.headerCollection.map(headerCollectionTemplate).join('')}
+    </div>
+  </header>
+  `
 }
 
 const etsyTemplate = (document.getElementById("app").innerHTML = `
   <div class="container">
-    <nav>
-        <a href="#" class="logo"><img src=${etsyData.nav.logo}></a>
-        <div class="search-box">
-            <input type="search" placeholder="Search">
-            <img class="nav-icon" src=${etsyData.nav.searchIcon}>
-        </div>
-        <img class="nav-icon" src=${etsyData.nav.signInIcon}>
-        <img class="nav-icon" src=${etsyData.nav.addToCartIcon}>
-    </nav>
-   <header>
-        <h2>${etsyData.header.title}</h2>
-        <div class="header-collection">
-            ${etsyData.header.headerCollection.map(headerCollectionTemplate).join('')}
-        </div>
-   </header>
+   ${navbar()}
+   ${header()}
   </div>
 `);
