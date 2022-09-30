@@ -3,11 +3,11 @@
     padding: 0;
 }
 :root{
-    --primary:#d1c0c0;
+    --primary:#c54057;
     --tertiary:#2b2828;
 }
 body{
-    background-color: var(--primary);
+    background-image: linear-gradient(180deg,var(--primary),rgb(212, 114, 114),rgb(255, 253, 253));
 }
 @font-face {
     font-family:"bungee.ttf" ;
