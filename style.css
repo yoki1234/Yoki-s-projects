@@ -4,7 +4,7 @@
 }
 :root{
     --primary:#c54057;
-    --tertiary:#2b2828;
+    --tertiary:#000000;
 }
 body{
     background-image: linear-gradient(180deg,var(--primary),rgb(212, 114, 114),rgb(255, 253, 253));
