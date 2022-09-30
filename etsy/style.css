@@ -167,6 +167,12 @@ header h2 {
     right: 5px;
     /* display:none; */
 }
+.main-section-card-conatiner:hover{
+    box-shadow: 2px 2px 5px gray;
+}
+.main-section-card-conatiner:hover >.main-section-card-conatiner svg:hover{
+    background-color:red;
+}
 
 .main-section-card-conatiner svg:hover, .price:hover{
     box-shadow: 0px 2px 4px gray;
