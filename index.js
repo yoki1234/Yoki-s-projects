@@ -87,6 +87,18 @@ const projectData = [
     img: "assets/project8.png",
     url: "etsy/index.html",
   },
+  {
+    no: "009",
+    name: "Animation",
+    contained:"learning",
+    type: "HTML",
+    startDate: "30 Sep 2022",
+    endDate: "30 Sep 2022",
+    timeTaken: "45min",
+    img: "assets/project9.png",
+    url: "animations/index.html",
+  },
+  
 ];
 
 function Projectcards(cardData) {
