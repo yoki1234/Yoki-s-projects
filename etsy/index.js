@@ -41,7 +41,7 @@ const etsyData = {
         url: "assets/mainSection/img1.avif",
         currency: "₹",
         price: "1,567",
-        discount:"700",
+        discount:20,
       },
       {
         class:"card2",
@@ -57,7 +57,7 @@ const etsyData = {
         url: "assets/mainSection/img3.webp",
         currency: "₹",
         price: "867",
-        discount:"599",
+        discount:"30",
       },
       {
         class:"card4",
@@ -65,7 +65,7 @@ const etsyData = {
         url: "assets/mainSection/img4.webp",
         currency: "₹",
         price: "4,099",
-        discount:"2,999",
+        discount:"10",
       },
       {
         class:"card5",
@@ -86,6 +86,8 @@ const etsyData = {
     ],
   },
 };
+
+
 
 function likeIcon() {
   return `
@@ -140,7 +142,12 @@ function header(headerData) {
   </header>
   `;
 }
+
+
 function mainSectionCard(carddata) {
+  let replaceNum = parseInt(carddata.price.replace(",","").trim(""));
+  let discountPrice = carddata.discount*replaceNum/100;
+  let discountpriced = parseInt(discountPrice)
   return `
     <a href="#">
       <div class="main-section-card-conatiner ${carddata.class}">
@@ -150,7 +157,7 @@ function mainSectionCard(carddata) {
               carddata.discount == null? "display:none " : ""
             }>
               <span>${carddata.currency}</span>
-              <span>${carddata.discount}</span>
+              <span>${discountpriced}</span>
            </span>
             <span style=${
               carddata.discount != null? "text-decoration:line-through;font-weight:300;" : ""
