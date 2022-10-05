@@ -1,93 +1,5 @@
-const etsyData = {
-  nav: {
-    logo: "assets/etsy-logo.svg",
-    signInIcon: "assets/sign-in-icon.svg",
-    addToCartIcon: "assets/add-to-cart-icon.svg",
-  },
-  header: {
-    title: "Discover one-of-a-kind items from independent creators",
-    headerCollection: [
-      {
-        name: "Diwali",
-        url: "assets/header/img1.webp",
-      },
-      {
-        name: "Home & Living",
-        url: "assets/header/img2.webp",
-      },
-      {
-        name: "Clothing",
-        url: "assets/header/img3.webp",
-      },
-      {
-        name: "Jewellery",
-        url: "assets/header/img4.webp",
-      },
-      {
-        name: "Wall Art",
-        url: "assets/header/img5.webp",
-      },
-      {
-        name: "On Sale",
-        url: "assets/header/img6.webp",
-      },
-    ],
-  },
-  main: {
-    section: [
-      {
-        class:"card1",
-        name: "ParametricArtWood",
-        url: "assets/mainSection/img1.avif",
-        currency: "₹",
-        price: "1,567",
-        discount:20,
-      },
-      {
-        class:"card2",
-        name: "ParametricArtWood",
-        url: "assets/mainSection/img2.webp",
-        currency: "₹",
-        price: "2,567",
-        discount:null,
-      },
-      {
-        class:"card3",
-        name: "ParametricArtWood",
-        url: "assets/mainSection/img3.webp",
-        currency: "₹",
-        price: "867",
-        discount:"30",
-      },
-      {
-        class:"card4",
-        name: "ParametricArtWood",
-        url: "assets/mainSection/img4.webp",
-        currency: "₹",
-        price: "4,099",
-        discount:"10",
-      },
-      {
-        class:"card5",
-        name: "ParametricArtWood",
-        url: "assets/mainSection/img5.webp",
-        currency: "₹",
-        price: "1,267",
-        discount:null,
-      },
-      {
-        class:"card6",
-        name: "KobzarStudio",
-        url: "assets/mainSection/img6.webp",
-        currency: "₹",
-        price: "11,675",
-        discount:null,
-      }
-    ],
-  },
-};
 
-
+import etsyData from "./etsyData.json" assert{type:'json'};
 
 function likeIcon() {
   return `
@@ -155,7 +67,7 @@ function mainSectionCard(carddata) {
           <div class="price">
             <span style=${
               carddata.discount == null? "display:none " : ""
-            }>
+            }> 
               <span>${carddata.currency}</span>
               <span>${discountpriced}</span>
            </span>
