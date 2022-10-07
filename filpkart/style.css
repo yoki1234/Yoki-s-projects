@@ -20,7 +20,6 @@ header{
     justify-content: center;
     align-items: center;
     position: fixed;
-    top:0;
     z-index: 5;
 }
 
@@ -53,6 +52,8 @@ nav{
     font-size: 14px;
     font-family: none;
     box-shadow: 2px 2px 3px rgb(196, 193, 193);
+    /* position: sticky;
+    top:0; */
 }
 .menu a{
     height: 48px;
@@ -70,7 +71,7 @@ nav{
     width: 24px;
 }
 main{
-    padding-top: 102px;
+    padding-top: 106px;
     width: 100vw;
     display: flex;
     flex-direction: column;
