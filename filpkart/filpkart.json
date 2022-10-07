@@ -34,8 +34,9 @@
                     "storage":"32 GB",
                     "ram":"3 GB",
                     "display":"16.59",
+                    "displayHD":"",
                     "battery":"5000 mAh",
-                    "backCam":"13MP",
+                    "backCam":"13MP Rear Camera",
                     "frontCam":""
                 },
                 "rating":"4.1",
@@ -44,34 +45,64 @@
                 "plusAssureImageURL":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
                 "currency":"₹",
                 "price":"8,793",
-                "discount":"12",
+                "emi":"",
+                "discount":"15",
                 "delivery":"Free delivery",
                 "bankOffer":"Bank Offer"
             },
             {
-                "imgURL":"https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
+                "imgURL":"https://rukminim1.flixcart.com/image/200/250/ky7lci80/mobile/y/0/v/-original-imagagf6reaugwfw.jpeg?q=90&crop=false",
                 "favMarkerURL":"https://rukminim1.flixcart.com/www/50/50/promos/24/06/2021/e383eca4-a4f2-4dcb-824d-d5b27a35e22b.png?q=90",
-                "title":"REDMI",
-                "model":"10A",
-                "color":"Slate Grey",
+                "title":"Xiaomi",
+                "model":"11i Hypercharge 5G",
+                "color":"Pacific Pearl",
                 "spec":{
-                    "storage":"64 GB",
-                    "ram":"4 GB",
-                    "display":"16.59",
-                    "battery":"5000 mAh",
-                    "backCam":"13MP",
-                    "frontCam":""
+                    "storage":"128 GB",
+                    "ram":"6 GB",
+                    "display":"16.94",
+                    "displayHD":"true",
+                    "battery":"4500 mAh",
+                    "backCam":"108MP + 8MP + 2MP",
+                    "frontCam":"16MP Front Camera"
                 },
-                "rating":"4.1",
+                "rating":"4.2",
                 "ratingStar":"★",
-                "consumers":"2,779",
+                "consumers":"7,049",
                 "plusAssureImageURL":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
                 "currency":"₹",
-                "price":"8,563",
-                "discount":"",
+                "price":"31,999",
+                "emi":"",
+                "discount":"21",
+                "delivery":"Free delivery",
+                "bankOffer":"Bank Offer"
+            },
+            {
+                "imgURL":"https://rukminim1.flixcart.com/image/200/250/ky7lci80/mobile/k/b/g/-original-imagagf6fzbhuhny.jpeg?q=90&crop=false",
+                "favMarkerURL":"https://rukminim1.flixcart.com/www/50/50/promos/24/06/2021/e383eca4-a4f2-4dcb-824d-d5b27a35e22b.png?q=90",
+                "title":"Xiaomi",
+                "model":"11i Hypercharge 5G",
+                "color":"Purple Mist",
+                "spec":{
+                    "storage":"128 GB",
+                    "ram":"6 GB",
+                    "display":"16.94",
+                    "displayHD":"true",
+                    "battery":"4500 mAh",
+                    "backCam":"108MP + 8MP + 2MP",
+                    "frontCam":"16MP Front Camera"
+                },
+                "rating":"4.2",
+                "ratingStar":"★",
+                "consumers":"7,049",
+                "plusAssureImageURL":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
+                "currency":"₹",
+                "price":"31,999",
+                "emi":"true",
+                "discount":"21",
                 "delivery":"Free delivery",
                 "bankOffer":"Bank Offer"
             }
+          
         ]
     }
 }

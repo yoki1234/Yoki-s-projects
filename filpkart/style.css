@@ -81,7 +81,8 @@ main{
     width:100vw;
 }
 .product-container{
-    display: flex;
+    display:flex;   
+    flex-direction: row;
     align-items: center;
 }
 .product-card-contaier{
@@ -167,12 +168,15 @@ main{
 .product-price{
     font-family: none;
 }
-.delivery,.bankoffer{
+.delivery,.bankoffer,.exchange div,.emi div{
     font-size: 12px;
     margin-top: 4px;
 }
-.bankoffer{
+.bankoffer,.exchange div:nth-child(1){
   color: #008c00;
+  font-family: none;
+}
+.exchange span,.emi span{
   font-family: none;
 }
 .product-spec{
@@ -186,13 +190,14 @@ main{
     align-items: flex-start;
     gap:10px;
 }
-.product-spec div:nth-child(1),.product-spec div:nth-child(3){
+.product-spec div:nth-child(1){
     padding: 4px;
     border-radius: 2px;
     border: 1px solid #e2e0e0;
 }
 .product-display {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   gap:6px;
 }

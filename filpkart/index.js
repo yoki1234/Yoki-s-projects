@@ -37,6 +37,8 @@ function header(){
   `
 }
 
+
+
 function productTemplate(productData){
     //-------------------------------------------------------------convert cm to inch
     const convertionToInch = productData.spec.display;
@@ -50,23 +52,33 @@ function productTemplate(productData){
     const pay = parseInt(price-saving);
     const numFor = Intl.NumberFormat('en-US');
     const newPrice = numFor.format(pay);
+    //-----------------------------------------------------------------Exchange price
+    const exchange = pay-4500;
+    const newExchangeOff = numFor.format(exchange);
+    //-----------------------------------------------------------EMI
+    const emiAmount = Math.round(pay/6);
+    const emi = numFor.format(emiAmount);
+
+
    return`
    <div class="product-card-contaier">
         <a class="card-container" href="#">
-                <div class="favIcon"><img src="${productData.favMarkerURL}"></div>
-                <div class="product-container">
-                    <div class="img-container">
+            <div class="favIcon">
+                <img src="${productData.favMarkerURL}">
+            </div>
+            <div class="product-container">
+                <div class="img-container">
                     <img src="${productData.imgURL}">
-                    </div>
-                    <div class="product-detailes">
+                </div>
+                <div class="product-detailes">
                     <span class="product-title">${productData.title} ${productData.model} (${productData.color}, ${productData.spec.storage})</span>
                     <div class="rating-consumers">
-                            <div class="rating">
-                                <div>${productData.rating}</div>
-                                <div>${productData.ratingStar}</div>
-                            </div>
-                            <p>(${productData.consumers})</p>
-                            <img src="${productData.plusAssureImageURL}">
+                        <div class="rating">
+                            <div>${productData.rating}</div>
+                            <div>${productData.ratingStar}</div>
+                        </div>
+                        <p>(${productData.consumers})</p>
+                        <img src="${productData.plusAssureImageURL}">
                     </div>
                     <div class="product-price">
                         <span style="${productData.discount?'display:none;text-decoration:line-through':""}">${productData.currency}</span>
@@ -76,15 +88,28 @@ function productTemplate(productData){
                         <span style=${productData.discount?"display:inline-block;font-size:12px;color:green":"display:none"}>${productData.discount}% off</span>
                     </div>
                     <div class="delivery">${productData.delivery}</div>
-                    <div class="bankoffer">${productData.bankOffer}</div>
+                    ${productData.emi?"":`
+                    <div style="${productData.discount >= 20?"display:none":"display:block"}" class="bankoffer">${productData.bankOffer}</div>
+                    <div style="${productData.discount >= 20?"display:block":"display:none"}" class="exchange">
+                       <div>Top Discount of the Sale</div>
+                       <div>Upto <span>${productData.currency}${newExchangeOff}</span> Off on Exchange</div>
+                    </div>`}
+                    <div style="${productData.emi?"display:block":"display:none"}" class="emi">
+                       <div>Upto <span>${productData.currency}${newExchangeOff}</span> Off on Exchange</div>
+                       <div>No Cost EMI from ${productData.currency}${emi}/month</div>
                     </div>
+                    
                 </div>
+            </div>
                 <div class="product-spec">
-                <div> ${productData.spec.ram} RAM | ${productData.spec.storage} Storage</div>
-                <div class="product-display">
-                    <div>${productData.spec.display} cm (${inchValue} inch) Display</div><div>${productData.spec.battery}</div>
-                </div>
-                <div>${productData.spec.backCam} Rear Camera</div>
+                    <div> ${productData.spec.ram} RAM | ${productData.spec.storage} Storage</div>
+                    <div class="product-display">
+                       <div>${productData.spec.display} cm (${inchValue} inch) ${productData.spec.displayHD?"Full HD+ AMOLED":""} Display</div><div>${productData.spec.battery}</div>
+                    </div>
+                    <div class="product-display">
+                        <div>${productData.spec.backCam}</div>
+                        <div style="${productData.spec.frontCam ? "display:block;":"display:none"}">${productData.spec.frontCam}</div>
+                    </div>
                 </div>
         </a>
    </div>
