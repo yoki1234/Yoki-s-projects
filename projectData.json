@@ -97,6 +97,17 @@
       "timeTaken": "45min",
       "img": "assets/project9.png",
       "url": "animations/index.html"
+    },
+    {
+      "no": "010",
+      "name": "CSS Animation",
+      "contained":"learning",
+      "type": "CSS",
+      "startDate": "08 Oct 2022",
+      "endDate": "08 Oct 2022",
+      "timeTaken": "55min",
+      "img": "assets/project10.png",
+      "url": "cssAnimation/index.html"
     }
     
   ]
