@@ -89,7 +89,7 @@
     },
     {
       "no": "009",
-      "name": "Animation",
+      "name": "SVG Animation",
       "contained":"learning",
       "type": "HTML",
       "startDate": "30 Sep 2022",
