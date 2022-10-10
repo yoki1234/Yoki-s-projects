@@ -1,15 +1,38 @@
 
 import flipKartData from "./filpkart.json" assert{type:'json'};
-console.log(flipKartData);
 
+//--------------------sorting
+function sortingOptions(item){
+    return `
+    <div>
+        <label for="${item}" >${item}</label>
+        <input type="radio" id="${item}">
+    </div>
+   `
+}
 
-
+function sortingTemplate(sortOptions){
+sortOptions = flipKartData.header.HeaderFiltering.sorting.menuOptions;
+const sortBy = sortOptions.split(",");
+console.log(sortBy);
+return `
+<div class="sortingWindow">
+    <div class="sorting-container">
+        <h2>${flipKartData.header.HeaderFiltering.sorting.menuTitle}</h2>
+        <div class="options-container">
+          ${sortBy.map(sortingOptions).join('')}
+        </div>
+    </div>
+</div>
+`
+}
+//--------------------------header
 function header(){
   const headerData=flipKartData.header;
   const menuData=headerData.HeaderFiltering;
   return`
    <header>
-        <nav>
+        <nav id="nav">
             <div class="nav-sub-section">
                     <a herf="#">${headerData.nav.backIcon}</a>
                     <a class="pageLogo" href="#">
@@ -23,8 +46,8 @@ function header(){
                     <a herf="#">${headerData.nav.pageEntry}</a>
             </div>
         </nav>
-        <div class="menu">
-            <a href="#">
+        <div class="menu" id="menu">
+            <a href="#" id="sorting">
                <img src="${menuData.sorting.url}">
                <P>${menuData.sorting.title}</P>
             </a>
@@ -33,11 +56,10 @@ function header(){
                 <P>${menuData.filter.title}</P>
             </a>
         </div>
+        ${sortingTemplate()}
    </header>
   `
 }
-
-
 
 function productTemplate(productData){
     //-------------------------------------------------------------convert cm to inch
@@ -58,7 +80,6 @@ function productTemplate(productData){
     //-----------------------------------------------------------EMI
     const emiAmount = Math.round(pay/6);
     const emi = numFor.format(emiAmount);
-
 
    return`
    <div class="product-card-contaier">
@@ -117,17 +138,11 @@ function productTemplate(productData){
 }
 
 function main(){
-  const adData = flipKartData.main.ad;
   const mainData= flipKartData.main;
   return`
    <main>
-       <a herf="#">
-        <img class="advertisement" src="${adData.url}">
-       </a>
-       
         ${mainData.product.map(productTemplate).join("")}
-      
-   <main>
+   </main>
   `
 }
 
@@ -137,3 +152,35 @@ const flipkartTemplate = document.getElementById("app").innerHTML=`
   ${main()}
 </div>
 `
+//-------------------------------------------scrolling : action at nav (header tag).
+const menu = document.getElementById('menu');
+const nav = document.getElementById('nav');
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll',()=>{
+    if(lastScrollY<window.scrollY){
+    nav.classList.add("nav-active");
+    menu.classList.add('active');
+    }else{
+        nav.classList.remove("nav-active");
+        menu.classList.remove('active')
+    }
+    lastScrollY=window.scrollY;
+});
+//----------------------------------------------sorting
+const sorting =document.getElementById('sorting');
+const sortingWindow=document.querySelector('.sortingWindow');
+const sortingContainer=document.querySelector('.sorting-container');
+
+
+const sortingConst = sorting.addEventListener('click',()=>{
+        sortingWindow.classList.add("sorting-active");
+        sortingContainer.classList.add("sorting-container-active");
+});
+
+ 
+
+
+
+
+

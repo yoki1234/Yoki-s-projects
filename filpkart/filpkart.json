@@ -11,7 +11,9 @@
         "HeaderFiltering": {
             "sorting": {
                 "url": "https://rukminim1.flixcart.com/www/50/50/promos/10/04/2019/d775ea02-5588-4cda-95ad-1ae03bb67e17.png?q=90",
-                "title": "Sort"
+                "title": "Sort",
+                "menuTitle":"sort by",
+                "menuOptions":"Popularity,Price -- Low to High,Price -- High to Low,Newest First"
             },
             "filter": {
                 "url": "https://rukminim1.flixcart.com/www/50/50/promos/10/04/2019/62f36a1e-caf6-4433-a848-2adb7e164a4d.png?q=90",
@@ -28,6 +30,7 @@
                 "imgURL":"https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
                 "favMarkerURL":"https://rukminim1.flixcart.com/www/50/50/promos/24/06/2021/e383eca4-a4f2-4dcb-824d-d5b27a35e22b.png?q=90",
                 "title":"REDMI",
+                "date":"05/09/2022",
                 "model":"10A",
                 "color":"Slate Grey",
                 "spec":{
@@ -54,6 +57,7 @@
                 "imgURL":"https://rukminim1.flixcart.com/image/200/250/ky7lci80/mobile/y/0/v/-original-imagagf6reaugwfw.jpeg?q=90&crop=false",
                 "favMarkerURL":"https://rukminim1.flixcart.com/www/50/50/promos/24/06/2021/e383eca4-a4f2-4dcb-824d-d5b27a35e22b.png?q=90",
                 "title":"Xiaomi",
+                "date":"09/10/2022",
                 "model":"11i Hypercharge 5G",
                 "color":"Pacific Pearl",
                 "spec":{
@@ -80,6 +84,7 @@
                 "imgURL":"https://rukminim1.flixcart.com/image/200/250/ky7lci80/mobile/k/b/g/-original-imagagf6fzbhuhny.jpeg?q=90&crop=false",
                 "favMarkerURL":"https://rukminim1.flixcart.com/www/50/50/promos/24/06/2021/e383eca4-a4f2-4dcb-824d-d5b27a35e22b.png?q=90",
                 "title":"Xiaomi",
+                "date":"02/10/2022",
                 "model":"11i Hypercharge 5G",
                 "color":"Purple Mist",
                 "spec":{

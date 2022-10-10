@@ -9,6 +9,7 @@
 body{
     width: 100vw;
     font-family: "roboto";
+    position: relative;
 }
 a{
     text-decoration: none;
@@ -34,6 +35,10 @@ nav{
     color: white;
     justify-content: space-around;
 }
+nav.nav-active{
+    transform: translateY(-55px);
+    box-shadow: none;
+}
 .pageLogo img{
     width: 23px;
 
@@ -52,11 +57,10 @@ nav{
     font-size: 14px;
     font-family: none;
     box-shadow: 2px 2px 3px rgb(196, 193, 193);
-    /* position: sticky;
-    top:0; */
+    transition: .1s ease-in ;
 }
 .menu a{
-    height: 48px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,6 +68,9 @@ nav{
     color: black;
     background-color: white;
     border: 0.5px solid rgb(209, 209, 209);
+}
+.menu.active{
+    transform: translateY(-55px);
 }
 .menu a img{
     margin-right: 5px;
@@ -78,6 +85,7 @@ main{
     align-items: center;
     justify-content: center;
 }
+
 .advertisement{
     width:100vw;
 }
@@ -121,16 +129,17 @@ main{
     height: 100%;
 }
 .product-detailes{
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 20px 0 12px;
-    margin: 10px 0 0 6px;
+    margin: 10px 0 0 10px;
 }
 .product-title{
     font-size: 14px;
     line-height: 16px;
-    width:98%;
+    width:72%;
     margin-bottom: 8px;
 }
 .rating-consumers{
@@ -206,4 +215,54 @@ main{
  padding: 4px;
  border-radius: 2px;
  border: 1px solid #e2e0e0;
+}
+.sorting-container{
+    display: flex;
+    flex-direction: column;
+    background:rgb(245, 245, 235);
+    width: 100vw;
+    position: absolute;
+    transform: translateY(183px);
+    transition: transform s ease-in-out;
+    bottom: 0;
+}
+.sorting-container.sorting-container-active{
+    transform: translateY(0);
+}
+.sorting-container h2{
+    text-transform: uppercase;
+    color: #878787;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom:1px solid #d4d1d1;
+}
+.options-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.options-container div{
+    width: 293px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: none;
+    font-size: 14px;
+    padding: 10px;
+
+}
+.sortingWindow{
+    display: none;
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000086;
+    transition: all .5s ease-in-out;
+}
+.sortingWindow.sorting-active{
+    display: block;
 }
