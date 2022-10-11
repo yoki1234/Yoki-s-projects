@@ -1,20 +1,31 @@
 
 import flipKartData from "./filpkart.json" assert{type:'json'};
 
-//--------------------sorting
+//--------------------------------------sorting
+
 function sortingOptions(item){
+    // const arrayOfIds = ["popularity","high-to-low","low-to-high","newest"]
+    // const IdNames = arrayOfIds.map(myfun).join('')
     return `
     <div>
-        <label for="${item}" >${item}</label>
-        <input type="radio" id="${item}">
+        <label for="${item=="Popularity"?"popularity":
+                      item=="Price -- Low to High"?"low-to-high":
+                      item=="Price -- High to Low"?"high-to-low":
+                      item=="Newest First"?"newest":""}" >${item}</label>
+        <input type="radio" id="${item=="Popularity"?"popularity":
+                                item=="Price -- Low to High"?"low-to-high":
+                                item=="Price -- High to Low"?"high-to-low":
+                                item=="Newest First"?"newest":""}">
     </div>
    `
 }
+
 
 function sortingTemplate(sortOptions){
 sortOptions = flipKartData.header.HeaderFiltering.sorting.menuOptions;
 const sortBy = sortOptions.split(",");
 console.log(sortBy);
+
 return `
 <div class="sortingWindow">
     <div class="sorting-container">
@@ -26,6 +37,8 @@ return `
 </div>
 `
 }
+
+
 //--------------------------header
 function header(){
   const headerData=flipKartData.header;
@@ -60,6 +73,8 @@ function header(){
    </header>
   `
 }
+
+
 
 function productTemplate(productData){
     //-------------------------------------------------------------convert cm to inch
@@ -137,6 +152,7 @@ function productTemplate(productData){
    `
 }
 
+
 function main(){
   const mainData= flipKartData.main;
   return`
@@ -167,16 +183,53 @@ window.addEventListener('scroll',()=>{
     }
     lastScrollY=window.scrollY;
 });
-//----------------------------------------------sorting
+//---------------------------------------------------sorting-Window
 const sorting =document.getElementById('sorting');
 const sortingWindow=document.querySelector('.sortingWindow');
 const sortingContainer=document.querySelector('.sorting-container');
 
 
-const sortingConst = sorting.addEventListener('click',()=>{
+sorting.addEventListener('click',()=>{
         sortingWindow.classList.add("sorting-active");
         sortingContainer.classList.add("sorting-container-active");
+        document.body.style.overflow = "hidden";
+        
 });
+
+ sortingWindow.addEventListener('click',()=>{
+    setTimeout(()=>{
+        sortingWindow.classList.remove("sorting-active");
+        sortingContainer.classList.remove("sorting-container-active");
+        document.body.style.overflow = "scroll";
+    },400);
+ });
+
+ //----------------------------------------------------------sorting
+const popularity=document.getElementById('popularity');
+const lowToHigh=document.getElementById('low-to-high');
+const highToLow=document.getElementById('high-to-low');
+const newest=document.getElementById('newest');
+
+popularity.addEventListener('click',popuratitySorting);
+// lowToHigh.addEventListener('click',lowToHighSorting);
+// highToLow.addEventListener('click',highToLowSorting);
+// newest.addEventListener('click',newestSorting);
+
+
+function popuratitySorting(sortingData){
+  sortingData = flipKartData.main.product;
+  const sort = sortingData.sort((a,b)=>{return b.rating - a.rating});
+  console.log(sort)
+  console.log(sort.map(productTemplate).join(''));
+}
+
+
+
+
+
+
+
+
 
  
 

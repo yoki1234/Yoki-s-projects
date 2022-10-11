@@ -11,6 +11,11 @@ body{
     font-family: "roboto";
     position: relative;
 }
+
+.no-scroll{
+    overflow: hidden;
+}
+
 a{
     text-decoration: none;
 }
