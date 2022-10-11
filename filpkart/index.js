@@ -236,4 +236,3 @@ function popuratitySorting(sortingData){
 
 
 
-

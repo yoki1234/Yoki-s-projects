@@ -108,6 +108,17 @@
       "timeTaken": "55min",
       "img": "assets/project10.png",
       "url": "cssAnimation/index.html"
+    },
+    {
+      "no": "011",
+      "name": "FlipKart",
+      "contained":"web-clone",
+      "type": "JS",
+      "startDate": "09 Oct 2022",
+      "endDate": "",
+      "timeTaken": "3hr 45min",
+      "img": "assets/project11.png",
+      "url": "filpkart/index.html"
     }
     
   ]
