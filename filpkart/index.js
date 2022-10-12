@@ -158,6 +158,7 @@ function main(){
   return`
    <main>
         ${mainData.product.map(productTemplate).join("")}
+        
    </main>
   `
 }
