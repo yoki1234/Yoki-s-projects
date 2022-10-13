@@ -22,7 +22,6 @@ class Counter extends Component {
             count:this.state.count-1
         },()=>{console.log('callBack',this.state.count)})
     }
-    }
   render() {
     return (
         <div>
