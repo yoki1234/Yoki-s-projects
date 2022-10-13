@@ -21,7 +21,10 @@ class Counter extends Component {
         this.setState({
             count:this.state.count-1
         },()=>{console.log('callBack',this.state.count)})
+<<<<<<< HEAD
     }git 
+=======
+>>>>>>> da2b3b83d1a336c4ac89d357d3e7a1a825e16888
     }
   render() {
     return (
