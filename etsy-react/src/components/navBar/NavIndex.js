@@ -7,8 +7,14 @@ function NavIndex(props) {
     const data = props.navdata;
     const[isActive,setActive]=useState(false)
 
-    const toggleClass=()=>{
-        setActive(!isActive)
+    const toggleClass=(e)=>{
+        e=true;
+        if(e===true){
+            setActive(!isActive)
+        }
+        else{
+            setActive(isActive)
+        }
     }
 
   return (
@@ -37,7 +43,7 @@ function NavIndex(props) {
              <svg viewBox="0 0 24 24">
                 <path d={data.dropDownPath}></path>
              </svg>
-             <div className={`${isActive ? 'search-bar':'active'}`} onClick={()=>{toggleClass();}}>
+             <div className={`${isActive ? 'search-bar':'active'}`} onblur={()=>{toggleClass();}} onFocus={()=>{toggleClass();}}>
                 <input type="search" placeHolder={data.searchBox.placeHolder}/>
                 
                     <svg viewBox="0 0 24 24">
