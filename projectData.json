@@ -119,6 +119,18 @@
       "timeTaken": "3hr 45min",
       "img": "assets/project11.png",
       "url": "filpkart/index.html"
+    },
+    {
+      "no": "012",
+      "name": "React-Modal",
+      "contained":"learning",
+      "type": "JS",
+      "startDate": "20 Oct 2022",
+      "endDate": "20 Oct 2022",
+      "timeTaken": "1hr 20min",
+      "img": "assets/project12.png",
+      "url": "react-modal/public/index.html"
     }
+    
     
   ]
