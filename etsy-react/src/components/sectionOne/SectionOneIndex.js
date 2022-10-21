@@ -3,11 +3,14 @@ import PlayBtn from "../../assets/playButton.svg";
 import BeforLike from "../../assets/beforLike.svg";
 import AfterLike from "../../assets/afterLike.svg";
 import Arrow from "../../assets/arrow.svg";
+import { useState } from "react";
 import './style.css'
 
 
 const SectionOneIndex = (props) => {
   
+  const [Active,setActive] = useState(false)
+
   stopVideo=(e)=>{
    e.target.pause();
   }

@@ -132,6 +132,93 @@
             }
         ],
         "sectionBottomInfo":"See more"
+      },
+      "sectionTwo":{
+        "title":"Discover unique hand-picked items",
+        "content":[
+            {
+                "contentTitle":"Modern farmhouse",
+                "contentProduct":[
+                    {
+                        "imgurl":"https://i.etsystatic.com/9089295/r/il/31ceb1/686266185/il_340x270.686266185_mmmf.jpg",
+                        "currency":"₹",
+                        "productPrice":"9,856",
+                        "discountPercentage":null
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/16119277/r/il/f1dfa3/3551572525/il_340x270.3551572525_nrnp.jpg",
+                        "currency":"₹",
+                        "productPrice":"4,011",
+                        "discountPercentage":"15"
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/24482847/c/1785/1419/381/335/il/698a6a/3211046136/il_680x540.3211046136_tlmt.jpg",
+                        "currency":"₹",
+                        "productPrice":"1,371",
+                        "discountPercentage":null
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/7136732/c/1894/1505/0/817/il/b75904/3544148363/il_680x540.3544148363_43f0.jpg",
+                        "currency":"₹",
+                        "productPrice":"1,543",
+                        "discountPercentage":null
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/6799010/c/2261/1797/0/463/il/4a638a/3610316818/il_340x270.3610316818_ia1y.jpg",
+                        "currency":"₹",
+                        "productPrice":"3,085",
+                        "discountPercentage":null
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/5492298/c/1484/1179/99/361/il/62c3d0/1271195575/il_340x270.1271195575_bwfg.jpg",
+                        "currency":"₹",
+                        "productPrice":"3,427",
+                        "discountPercentage":"4,285"
+                    }
+                ]
+            },
+            {
+                "contentTitle":"Eclectic Decor",
+                "contentProduct":[
+                    {
+                        "imgurl":"https://i.etsystatic.com/15654985/r/il/38e4a0/2304142408/il_340x270.2304142408_f5md.jpg",
+                        "currency":"₹",
+                        "productPrice":"106,189",
+                        "discountPercentage":"20"
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/18049111/r/il/da9f7d/2236543341/il_340x270.2236543341_dpxn.jpg",
+                        "currency":"₹",
+                        "productPrice":"30,542",
+                        "discountPercentage":null
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/26666586/r/il/630b51/2775752914/il_680x540.2775752914_5fc0.jpg",
+                        "currency":"₹",
+                        "productPrice":"14,130",
+                        "discountPercentage":null
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/23670574/r/il/454fb5/3957944732/il_680x540.3957944732_hzy8.jpg",
+                        "currency":"₹",
+                        "productPrice":"5,753",
+                        "discountPercentage":null
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/9121310/r/il/ec9ef2/3484180876/il_340x270.3484180876_avm9.jpg",
+                        "currency":"₹",
+                        "productPrice":"3,884",
+                        "discountPercentage":null
+                    },
+                    {
+                        "imgurl":"https://i.etsystatic.com/24971419/r/il/de2334/2515062562/il_340x270.2515062562_kzvh.jpg",
+                        "currency":"₹",
+                        "productPrice":"771",
+                        "discountPercentage":null
+                    }
+                ]
+            }
+        ]
       }
     }
 }
