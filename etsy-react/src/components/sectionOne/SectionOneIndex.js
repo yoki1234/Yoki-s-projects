@@ -9,16 +9,17 @@ import './style.css'
 
 const SectionOneIndex = (props) => {
   
-  const [Active,setActive] = useState(false)
+  const [active,setActive] = useState(false)
 
-  stopVideo=(e)=>{
-   e.target.pause();
+  function videoControl(e){
+    if(active===false){
+       e.target.pause();
+    }else{
+      e.target.play();
+    }
   }
 
-  playVideo=(e)=>{
-   e.target.play();
-  }
-
+ 
   const Data = props.sectionOneData;
   return (
     <div className="section">
@@ -41,7 +42,7 @@ const SectionOneIndex = (props) => {
                     <div className="container-icon img-icon">
                        <img src={AfterLike} alt="after-icon" />
                     </div>
-                    <video controls poster={e.video.thumbnail} onMouseOver={()=>{playVideo();}} onMouseOut={()=>{stopVideo();}}>
+                    <video controls poster={e.video.thumbnail} onMouseOver={()=>{videoControl();}} onMouseOut={()=>{videoControl(e);}}>
                       <source src={e.video.videoUrl} type="video/mp4" />
                     </video>
                   </div>
